@@ -12,11 +12,11 @@ Analyze the conversation and return STRICT structured insights using the provide
 
 Rules:
 - Be concise and clear. No long paragraphs. No extra explanations.
-- Always fill all sections.
+- Always fill all sections, even from short / partial transcripts.
 - Objection: client concern (pricing, trust, timing, competition, etc.) or "None".
 - Intent: e.g., interested, hesitant, negotiating, rejecting, exploring.
 - Sentiment: Positive | Neutral | Negative.
-- Suggestion: short, practical line the rep should say NEXT.
+- Suggestion: short, practical line the rep should say NEXT (1 sentence, ready to speak).
 - Warning: risk signal, or "No immediate risk".
 - Hindsight: smart pattern-based insight from general sales wisdom.`;
 
@@ -57,10 +57,10 @@ Deno.serve(async (req) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "google/gemini-3-flash-preview",
+        model: "google/gemini-2.5-flash-lite",
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
-          { role: "user", content: `Conversation:\n${conversation}` },
+          { role: "user", content: `Conversation so far:\n${conversation}` },
         ],
         tools: [
           {
