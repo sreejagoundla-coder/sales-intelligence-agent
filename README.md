@@ -110,6 +110,7 @@ The system analyzes conversation snippets to extract:
 ### 🔹 Frontend
 - React (Vite)
 - JavaScript (ES6+)
+- TypeScript
 - HTML5 / CSS3
 - Web Speech API (SpeechRecognition)
 
@@ -201,7 +202,7 @@ deal-intelligence-agent/
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
-
+--------
 
 💻 Frontend Setup
 Bash
@@ -209,6 +210,7 @@ cd frontend
 npm install
 npm run dev
 
+------
 🎤 Demo Instructions
 Open the application
 Click Start Listening
@@ -219,6 +221,7 @@ AI-generated insights
 🧪 Sample Input
 “The pricing feels high and we are comparing other tools before deciding.”
 
+-------
 📊 Expected Output
 Objection: Pricing
 Intent: Hesitant
@@ -227,6 +230,7 @@ Suggestion: Highlight ROI
 Warning: Potential delay or drop risk
 Insight: Pricing concerns often indicate value uncertainty
 
+-------
 🚀 Future Enhancements
 Persistent conversation memory (database integration)
 Deal success prediction using ML models
@@ -235,11 +239,12 @@ Dashboard analytics and reporting
 CRM integration
 Voice emotion detection
 
-
+-------
  Team Members
 [Sreeja Goundla]
 [Sindhu Reddy]
 [Shaiinit varsha]
 [akshaya]
+[Bindhu]
 🏆 Acknowledgment
 This project was developed as part of a hackathon to explore the potential of AI in real-time decision support systems.
