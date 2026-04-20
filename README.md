@@ -1,4 +1,5 @@
-# 🧠 Conversation Intelligence AI  
+# 🧠 Conversation Intelligence AI 
+## Live Sales Coach
 ### Your AI-Powered Real-Time Meeting Assistant
 
 > Transform conversations into actionable intelligence — instantly.
