@@ -53,7 +53,7 @@ This project introduces a **real-time conversation intelligence system** that:
 ### 🎙️ 1. Real-Time Voice Capture
 - Uses browser microphone access
 - Continuously listens during meetings
-- No manual input required
+- No manual input required..
 
 ---
 
